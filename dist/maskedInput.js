@@ -154,8 +154,8 @@ export default {
     },
     keyDown: function keyDown(e) {
       // Always
-      console.log('------------------------------------');
-      console.log('keyDown: e ', e);
+      // console.log('------------------------------------')
+      // console.log('keyDown: e ', e)
       if (this.maskCore === null) {
         e.preventDefault();
         return;
@@ -163,7 +163,7 @@ export default {
       this.setNativeSelection();
       var keyCode = e.keyCode || e.charCode || e.which;
 
-      console.log('keyCode:', keyCode);
+      // console.log('keyCode:', keyCode)
 
       switch (keyCode) {
         // backspace
@@ -279,10 +279,10 @@ export default {
     keyUp: function keyUp(e) {
       var keyCode = e.keyCode || e.charCode || e.which;
 
-      console.log('------------------------------------');
-      console.log('keyUp: e ', e);
-      console.log('keyUp:', keyCode);
-      console.log('isFirefox:', typeof InstallTrigger !== 'undefined');
+      // console.log('------------------------------------')
+      // console.log('keyUp: e ', e)
+      // console.log('keyUp:', keyCode)
+      // console.log('isFirefox:', typeof InstallTrigger !== 'undefined')
 
       if (keyCode === 9) {
         // Preven change selection for Tab in
@@ -305,10 +305,10 @@ export default {
     paste: function paste(e) {
       var _this2 = this;
 
-      console.log('------------------------------------');
-      console.log('paste: e ', e);
-      console.log('paste:', e.clipboardData.getData('text'));
-      console.log('isFirefox:', typeof InstallTrigger !== 'undefined');
+      // console.log('------------------------------------')
+      // console.log('paste: e ', e)
+      // console.log('paste:', e.clipboardData.getData('text'))
+      // console.log('isFirefox:', typeof InstallTrigger !== 'undefined')
 
       e.preventDefault();
       var text = e.clipboardData.getData('text');
