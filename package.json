@@ -109,5 +109,5 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --inline --hot",
     "lint": "eslint src/MaskedInput.js"
   },
-  "version": "0.5.4"
+  "version": "0.5.5"
 }
