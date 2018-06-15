@@ -17,7 +17,7 @@
   "_id": "vue-masked-input@0.5.2",
   "_inCache": true,
   "_location": "/vue-masked-input",
-  "_nodeVersion": "6.9.2",
+  "_nodeVersion": "8.10.0",
   "_npmOperationalInternal": {
     "host": "s3://npm-registry-packages",
     "tmp": "tmp/vue-masked-input-0.5.2.tgz_1497001211169_0.04090463696047664"
