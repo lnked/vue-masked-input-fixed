@@ -256,14 +256,14 @@ export default {
 
       var keyCode = e.keyCode || e.charCode || e.which || 0;
 
-      if (e.ctrlKey || e.metaKey) return; // Fix FF copy/paste issue
+      if (e.ctrlKey || e.metaKey || e.shiftKey) return; // Fix FF copy/paste issue
       // IE & FF are not trigger textInput event, so we have to force it
       /* eslint-disable */
       var isIE = /*@cc_on!@*/false || !!document.documentMode; //by http://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
       /* eslint-enable */
       var isFirefox = typeof InstallTrigger !== 'undefined';
 
-      if ((isIE || isFirefox) && [8, 9].indexOf(keyCode) < 0) {
+      if ((isIE || isFirefox) && [8, 9, 45].indexOf(keyCode) < 0) {
         e.preventDefault();
         e.data = e.key;
         this.textInput(e);
